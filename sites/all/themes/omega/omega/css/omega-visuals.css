@@ -125,7 +125,7 @@
 }
 
 table {
-	margin:15px 0px 10px 0px;
+  border: 1px solid #CCC;
   width: 100%;
 }
 
@@ -173,17 +173,17 @@ td.active {
 }
 
 tr.even td.active {
-  background: #ffffff;
+  background: #e5e9ed;
 }
 
 tr.odd td.active {
-  background: #ffffff;
+  background: #f2f2f2;
 }
 
 tr:hover td,
 tr.even:hover td.active,
 tr.odd:hover td.active {
-  background: #ffffff;
+  background: #FFFEEE;
 }
 
 td ul.links {
