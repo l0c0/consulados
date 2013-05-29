@@ -30,7 +30,6 @@
 .gmap-map {
   /* Don't let long copyright texts stick out the side of the map div. */
   overflow: hidden;
-  border: 1 solid #333 !important;
 }
 
 /* Clean up unwanted styling for google toolbar */
@@ -70,3 +69,4 @@
 #getlocations_map_canvas img {
   max-width: none !important;
 }
+
