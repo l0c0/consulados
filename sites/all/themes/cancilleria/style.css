@@ -3571,74 +3571,108 @@ Plantilla de Consulados
 .panel-pane.pane-block.pane-menu-menu-links-of-interest.enlaces_interes {
   margin-left: 15px;
 }
-#Pagina_Inicial ul.menu li.leaf {
-  /* list-style: disc;*/
+#Pagina_Inicial .panel_consulado {
+  background-color: white;
+  height: 200px;
+}
+#Pagina_Inicial .panel_consulado ul.menu li.leaf {
+  list-style: disc;
   list-style-position: inside;
 }
-.panel-pane.pane-block.pane-menu-block-7 {
+#Pagina_Inicial .panel_servicios_consulares {
   background-color: white;
   height: 200px;
 }
-.panel-pane.pane-block.pane-menu-block-8 {
+#Pagina_Inicial .panel_servicios_consulares ul.menu li.leaf {
+  list-style: disc;
+  list-style-position: inside;
+}
+#Pagina_Inicial .panel_otros_servicios {
   background-color: white;
   height: 200px;
 }
-.panel-pane.pane-block.pane-menu-block-9 {
+#Pagina_Inicial .panel_otros_servicios ul.menu li.leaf {
+  list-style: disc;
+  list-style-position: inside;
+}
+#Pagina_Inicial .panel_enlaces_interes {
   background-color: white;
   height: 200px;
 }
-.panel-pane.pane-block.pane-menu-menu-links-of-interest.enlaces_interes {
+#Pagina_Inicial .panel_enlaces_interes ul.menu li.leaf {
+  list-style: none none none;
+  margin-left: 0;
+  padding-left: 10px;
+  height: 15px;
+}
+#Pagina_Inicial .panel_enlaces_oficiales {
   background-color: white;
   height: 200px;
 }
-.panel-pane.pane-block.pane-menu-menu-official-links.enlaces_oficiales {
-  background-color: white;
-  height: 200px;
+#Pagina_Inicial .panel_enlaces_oficiales ul.menu li.leaf {
+  list-style: none none none;
+  margin-left: 0;
+  padding-left: 10px;
+  height: 15px;
+}
+#Pagina_Inicial .Noticias_Principales {
+  margin-left: 15px;
 }
 /*added  icos for the right menu Jojuela*/
 ul.menu li a.ministerio_relaciones_exteriores {
    background:url("images/iconos/cancilleria-logo1.png") no-repeat;
-   height:30px;
+   background-size: contain;
+   padding-left: 20px;
 }
 ul.menu li a.presidencia_consulado {
    background:url("images/iconos/presidencia-logo1.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.proexport {
    background:url("images/iconos/proexport-logo1.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.redes_colombia {
    background:url("images/iconos/redescolombia1.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.urna_cristal {
    background:url("images/iconos/logo_urna1.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.registraduria_estado_civil {
    background:url("images/iconos/registraduria-logo1.jpg") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.documentos_estrategicos {
    background:url("images/iconos/docs-estrategicos.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.temas_especificos {
    background:url("images/iconos/temas-espec.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.other-consulates {
    background:url("images/iconos/otros-consulados.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.cancilleria_ninos {
    background:url("images/iconos/cancilleria_ninos.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 ul.menu li a.certification-of-judicial-record {
    background:url("images/iconos/certificado.png") no-repeat;
-   height:30px;
+   background-size: contain;
+      padding-left: 20px;
 }
 
 .Cancilleria_shapes {
