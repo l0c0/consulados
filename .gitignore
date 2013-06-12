@@ -1,8 +1,28 @@
-*.DS_Store
-
 # Ignore configuration files that may contain sensitive information.
+*~
+*.gz
+*.gzip
+*.bzip2
+*.zip
+*.DS_Store
+error_log
 sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+/cache
+/cgi-bin
+/tmp
+
+
+
+
+
+
+
+
+
+
+
+
