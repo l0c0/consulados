@@ -3072,7 +3072,7 @@ position:relative
 }
 
 #Pagina_Inicial .Noticias_Diapositivas .views-field-title {
-background:url(/sites/all/themes/Cancilleria/images/BgBlack60.png) center top;
+background:url(/sites/all/themes/cancilleria/images/BgBlack60.png) center top;
 bottom:4px;
 color:#FFF;
 height:55px;
@@ -3081,7 +3081,8 @@ overflow:hidden;
 padding:0 10px;
 position:absolute;
 width:900px;
-z-index:9
+z-index:9;
+display: block;
 }
 
 #Pagina_Inicial .Noticias_Diapositivas h3 {
@@ -3417,7 +3418,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 
 
 .field.field-name-field-image-full-description.field-type-text-long.field-label-hidden {
-  background: url("/sites/all/themes/Cancilleria/images/BgBlack60.png") repeat scroll center top transparent;
+  background: url("/sites/all/themes/cancilleria/images/BgBlack60.png") repeat scroll center top transparent;
   bottom: 4px;
   color: #FFFFFF;
   font-family: Arial,'Arial Unicode MS',Helvetica,Sans-Serif;
@@ -3520,13 +3521,13 @@ padding: 0 10px;
   display: none;
 }
 .responsive .Logo_Adaptativo {
-  background: url("/sites/all/themes/Cancilleria/images/LogoAdaptativo.png") no-repeat scroll center top;
+  background: url("/sites/all/themes/cancilleria/images/LogoAdaptativo.png") no-repeat scroll center top;
   height: 100px;
   width: auto;
   background-color: #ededed;
 }
 .responsive .Logo_Adaptativo {
-  background: url("/sites/all/themes/Cancilleria/images/LogoAdaptativo02.png") no-repeat scroll center top #EDEDED;
+  background: url("/sites/all/themes/cancilleria/images/LogoAdaptativo02.png") no-repeat scroll center top #EDEDED;
   height: 100px;
   width: auto;
 }
@@ -3618,6 +3619,12 @@ Plantilla de Consulados
 #Pagina_Inicial .Noticias_Principales {
   margin-left: 15px;
 }
+
+#Pagina_Inicial .Cancilleria_postcontent p {
+  margin: 5px 0 0 !important;
+
+}
+
 /*added  icos for the right menu Jojuela*/
 ul.menu li a.ministerio_relaciones_exteriores {
    background:url("images/iconos/cancilleria-logo1.png") no-repeat;
@@ -3676,7 +3683,7 @@ ul.menu li a.certification-of-judicial-record {
 }
 
 .Cancilleria_shapes {
-  background-image: url("images/cabezote01.png") !important;
+  background-image: url("images/cabezote03.jpg") !important;
   bottom: 0;
   left: 0;
   overflow: hidden;
