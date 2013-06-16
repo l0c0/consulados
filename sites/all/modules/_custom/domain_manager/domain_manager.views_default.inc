@@ -184,7 +184,7 @@ function domain_manager_views_default_views() {
   $handler->display->display_options['defaults']['access'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['block_description'] = 'Site name and logo';
-
+  
   /* Display: Página */
   $handler = $view->new_display('page', 'Página', 'domain_page_list');
   $handler->display->display_options['defaults']['pager'] = FALSE;

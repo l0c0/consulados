@@ -3545,7 +3545,7 @@ Plantilla de Consulados
   float: left;
   font-size: 25px;
   margin-top: 45px;
-  display: none;
+  display: block;
 }
 .views-field.views-field-title a {
   color: white;
@@ -3557,7 +3557,7 @@ Plantilla de Consulados
 .views-field.views-field-field-domain-site-flag {
   float: left;
   margin-top: 50px;
-  display: none;
+  display: block;
 }
 .views-field.views-field-field-domain-telephone-support {
   color: white;
