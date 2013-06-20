@@ -2608,7 +2608,6 @@ img.Cancilleria_lightbox-image.active
    opacity: 1;
    filter: alpha(opacity=100);
 }
-
 .arrow.disabled
 {
    display: none;
@@ -3089,7 +3088,7 @@ display: block;
   color: #FFFFFF;
   font-size: 15px;
   font-weight: 700;
-  margin-top: -20px;
+  margin-top: 0px;
   line-height: 100%;
 }
 
@@ -3535,36 +3534,48 @@ padding: 0 10px;
 /*
 Plantilla de Consulados
  */
+.region-art-header .field-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.region-art-header .views-field.views-field-sitename {
+float: left;
+font-size: 25px;
+font-weight: bold;
+height: 75px;
+margin-left: 335px;
+margin-top: 35px;
+padding-left: 0;
+width: 330px;
 
-.views-field.views-field-field-domain-site-logo {
-  float: left;
-  display: none;
 }
-.views-field.views-field-title {
-  color: white;
-  float: left;
-  font-size: 25px;
-  margin-top: 45px;
-  display: block;
-}
-.views-field.views-field-title a {
-  color: white;
+.region-art-header .views-field.views-field-sitename a {
+  color: #2B1399;
   text-decoration: none;
 }
-.views-field.views-field-title a:hover {
+.region-art-header .views-field.views-field-sitename a:hover {
+  color: #2B1399;
   text-decoration: underline;
 }
-.views-field.views-field-field-domain-site-flag {
-  float: left;
-  margin-top: 50px;
-  display: block;
+.region-art-header .views-field.views-field-field-domain-site-flag {
+display: block;
+float: left;
+margin-left: 10px;
+margin-top: 45px;
 }
+
 .views-field.views-field-field-domain-telephone-support {
-  color: white;
+color: white;
+font-size: 10px;
+
 }
-.Cancilleria_header > .region, .Cancilleria_header > .block {
-   background-color: #2B1399;
-   height: 120px;
+
+#block-block-15 {
+  height: 65px;
+  left: 772px;
+  position: absolute;
+  top: 20px;
+  width: 170px;
 }
 .panel-pane.pane-block.pane-block-9 {
   margin-left: 15px;
