@@ -520,13 +520,10 @@ li p, .Cancilleria_postcontent li p, .Cancilleria_blockcontent li p
 
 .Cancilleria_header
 {
-   margin:0 auto;
-   height: 180px;
-   background-image: url('images/object1448112927.png'), url('images/header.jpg');
-   background-position: 772px 15px, 0 0;
-   background-repeat: no-repeat;
-   position: relative;
-   z-index: auto !important;
+    margin:0 auto;
+    height: 220px;
+    position: relative;
+    z-index: auto !important;
 }
 
 .responsive .Cancilleria_header
@@ -2777,16 +2774,17 @@ font-weight:400
 }
 
 #layout-1-links-above {
-border:0 none;
-color:#FFF;
-float:right;
-font-size:100%;
-font-style:inherit;
-font-weight:inherit;
-margin-top:45px;
-outline:0 none;
-padding:0;
-vertical-align:baseline
+  border: 0 none;
+  color: #FFFFFF;
+  float: right;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin-right: 20px;
+  margin-top: -2px;
+  outline: 0 none;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 #layout-1-links-above li {
@@ -3178,9 +3176,11 @@ top:40px;
 
 
 #block-lang-dropdown-language {
+color: #FFFFFF;
+font-size: 12px;
 left:860px;
 position:absolute;
-top:72px;
+top:120px;
 }
 
 #the_minister .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section,#politica_exterior .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
@@ -3372,9 +3372,12 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
 .views-exposed-form {
   margin-left: 30px;
 }
-.media-youtube-video.media-youtube-1 iframe {
+.page-home .media-youtube-video.media-youtube-1 iframe {
   height: 200px;
-  width: 290px;
+  width: 301px;
+}
+.media-youtube-video.media-youtube-1 {
+  text-align: center;
 }
 
 .pie_de_foto_secciones {
@@ -3542,14 +3545,13 @@ Plantilla de Consulados
 }
 .region-art-header .views-field.views-field-sitename {
 float: left;
-font-size: 20px;
+font-size: 18px;
 font-weight: bold;
-height: 75px;
-margin-left: 345px;
-margin-top: 35px;
+height: 60px;
+margin-left: 250px;
+margin-top: 55px;
 padding-left: 0;
-width: 310px;
-
+width: 220px;
 }
 .region-art-header .views-field.views-field-sitename a {
   color: #2B1399;
@@ -3562,8 +3564,8 @@ width: 310px;
 .region-art-header .views-field.views-field-field-domain-site-flag {
 display: block;
 float: left;
-margin-left: 15px;
-margin-top: 100px;
+margin-left: 20px;
+margin-top: 115px;
 }
 
 .views-field.views-field-field-domain-telephone-support {
@@ -3576,7 +3578,7 @@ font-size: 10px;
   height: 65px;
   left: 772px;
   position: absolute;
-  top: 20px;
+  top: 55px;
   width: 170px;
 }
 .panel-pane.pane-block.pane-block-9 {
@@ -3696,7 +3698,7 @@ ul.menu li a.certification-of-judicial-record {
 }
 
 .Cancilleria_shapes {
-  background-image: url("images/cabezote03.jpg") !important;
+  background-image: url("images/cabezote07.jpg") !important;
   bottom: 0;
   left: 0;
   overflow: hidden;
@@ -3705,6 +3707,32 @@ ul.menu li a.certification-of-judicial-record {
   top: 0;
   z-index: 0;
 }
+#rendicion-cuentas {
+  background-image: url("/sites/default/files/rendicion-04.jpg");
+  background-position: 0 0;
+  height: 400px;
+  margin-left: -20px !important;
+  margin-top: -5px !important;
+  width: 920px;
+}
+#rendicion-cuentas object {
+  margin-left: 340px;
+  margin-top: 10px;
+}
+
+.UltimoVideoYouTube .field-content {
+  padding: 0 !important;
+}
+
+.Cancilleria_hmenu-extra1 {
+  background-color: #070038;
+  height: 35px;
+}
+
+.field.field-name-field-main-image.field-type-image.field-label-hidden {
+  text-align: center;
+}
+
 /* End Additional CSS Styles */
 
 /* BEGIN FCKEditor, CKEditor, TinyMCE modules support*/
@@ -3735,6 +3763,7 @@ li.expanded, li.leaf, li.collapsed
 ul li
 {
 	list-style-type: disc;
+	list-style: inside;
 }
 ul.arttabs_primary, ul.arttabs_secondary, .links, img.service-links
 {
