@@ -3178,9 +3178,9 @@ top:40px;
 #block-lang-dropdown-language {
 color: #FFFFFF;
 font-size: 12px;
-left:860px;
-position:absolute;
-top:120px;
+position: absolute;
+right: 15px;
+top: 105px;
 }
 
 #the_minister .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section,#politica_exterior .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section {
@@ -3545,11 +3545,11 @@ Plantilla de Consulados
 }
 .region-art-header .views-field.views-field-sitename {
 float: left;
-font-size: 18px;
+font-size: 16px;
 font-weight: bold;
 height: 60px;
-margin-left: 250px;
-margin-top: 55px;
+margin-left: 260px;
+margin-top: 70px;
 padding-left: 0;
 width: 220px;
 }
@@ -3564,8 +3564,8 @@ width: 220px;
 .region-art-header .views-field.views-field-field-domain-site-flag {
 display: block;
 float: left;
-margin-left: 20px;
-margin-top: 115px;
+margin-left: 60px;
+margin-top: 120px;
 }
 
 .views-field.views-field-field-domain-telephone-support {
@@ -3575,11 +3575,17 @@ font-size: 10px;
 }
 
 #block-block-15 {
-  height: 65px;
-  left: 772px;
+height: 65px;
+position: absolute;
+right: 45px;
+top: 40px;
+width: 105px;
+}
+#block-block-17 {
+  height: 25px;
   position: absolute;
-  top: 55px;
-  width: 170px;
+  right: 20px;
+  width: 330px;
 }
 .panel-pane.pane-block.pane-block-9 {
   margin-left: 15px;
@@ -3589,7 +3595,7 @@ font-size: 10px;
 }
 #Pagina_Inicial .panel_consulado {
   background-color: white;
-  height: 200px;
+  height: 210px;
 }
 #Pagina_Inicial .panel_consulado ul.menu li.leaf {
   list-style: disc;
@@ -3597,7 +3603,10 @@ font-size: 10px;
 }
 #Pagina_Inicial .panel_servicios_consulares {
   background-color: white;
-  height: 200px;
+  height: 210px;
+}
+#Pagina_Inicial .panel_servicios_consulares li {
+  padding-bottom: inherit;
 }
 #Pagina_Inicial .panel_servicios_consulares ul.menu li.leaf {
   list-style: disc;
@@ -3605,7 +3614,7 @@ font-size: 10px;
 }
 #Pagina_Inicial .panel_otros_servicios {
   background-color: white;
-  height: 200px;
+  height: 210px;
 }
 #Pagina_Inicial .panel_otros_servicios ul.menu li.leaf {
   list-style: disc;
@@ -3698,7 +3707,7 @@ ul.menu li a.certification-of-judicial-record {
 }
 
 .Cancilleria_shapes {
-  background-image: url("images/cabezote07.jpg") !important;
+  background-image: url("images/cabezote09.png") !important;
   bottom: 0;
   left: 0;
   overflow: hidden;
