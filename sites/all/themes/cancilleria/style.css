@@ -3742,6 +3742,13 @@ ul.menu li a.certification-of-judicial-record {
 .field.field-name-field-main-image.field-type-image.field-label-hidden {
   text-align: center;
 }
+.field-content.centrado {
+  text-align: center;
+}
+.centrado .imgtitlecaption-alt {
+  font-size: smaller;
+}
+
 
 /* End Additional CSS Styles */
 
