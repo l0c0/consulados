@@ -4,6 +4,8 @@
 *.gzip
 *.bzip2
 *.zip
+.ftpquota
+.gitignore
 error_log
 sites/*/settings.php
 
