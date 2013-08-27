@@ -198,6 +198,7 @@ ul.Cancilleria_vmenu a
    text-decoration: none;
    text-transform: none;
    font-variant: normal;
+   margin: 15px 0 0;
 }
 
 .Cancilleria_blockcontent h2
@@ -1247,7 +1248,7 @@ ul.Cancilleria_vmenu>li:first-child
 
 ul.Cancilleria_vmenu>li>a:hover, ul.Cancilleria_vmenu>li>a.active:hover
 {
-   background: #FFFFFF;
+   background: #2C139A;
    padding:0 5px;
    margin:0 auto;
 }
@@ -1260,7 +1261,7 @@ ul.Cancilleria_vmenu>li>a:hover, ul.Cancilleria_vmenu>li>a.active:hover
 
 ul.Cancilleria_vmenu a:hover, ul.Cancilleria_vmenu a.active:hover
 {
-   color: #15295B;
+   color: #FFFFFF;
 }
 
 ul.Cancilleria_vmenu>li>a.active:hover>span.border-top, ul.Cancilleria_vmenu>li>a.active:hover>span.border-bottom
@@ -1334,8 +1335,8 @@ ul.Cancilleria_vmenu ul a
    min-height: 24px;
    overflow: visible;
    padding: 0;
-   padding-left: 23px;
-   padding-right: 23px;
+   padding-left: 15px;
+   padding-right: 10px;
    z-index: 0;
    line-height: 24px;
    color: #333333;
@@ -1350,7 +1351,6 @@ ul.Cancilleria_vmenu ul a
 
 ul.Cancilleria_vmenu ul a:visited, ul.Cancilleria_vmenu ul a.active:hover, ul.Cancilleria_vmenu ul a:hover, ul.Cancilleria_vmenu ul a.active
 {
-   line-height: 24px;
    color: #333333;
    font-size: 12px;
    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
@@ -1363,24 +1363,24 @@ ul.Cancilleria_vmenu ul a:visited, ul.Cancilleria_vmenu ul a.active:hover, ul.Ca
 
 ul.Cancilleria_vmenu ul ul a
 {
-   padding-left: 46px;
+   padding-left: 35px;
 }
 ul.Cancilleria_vmenu ul ul ul a
 {
-   padding-left: 69px;
+   padding-left: 55px;
 }
 ul.Cancilleria_vmenu ul ul ul ul a
 {
-   padding-left: 92px;
+   padding-left: 75px;
 }
 ul.Cancilleria_vmenu ul ul ul ul ul a
 {
-   padding-left: 115px;
+   padding-left: 95px;
 }
 
 ul.Cancilleria_vmenu ul>li>a:hover, ul.Cancilleria_vmenu ul>li>a.active:hover
 {
-   background: #FFFFFF;
+   background: #2C139A;
    margin:0 auto;
 }
 ul.Cancilleria_vmenu ul li a:hover, ul.Cancilleria_vmenu ul li a.active:hover
@@ -1390,7 +1390,8 @@ ul.Cancilleria_vmenu ul li a:hover, ul.Cancilleria_vmenu ul li a.active:hover
    text-decoration: underline;
    text-transform: none;
    font-variant: normal;
-   color: #15295B;
+/*   color: #15295B;*/
+   color: #FFFFFF;
 }
 
 ul.Cancilleria_vmenu ul a:hover:after
@@ -3748,6 +3749,305 @@ ul.menu li a.certification-of-judicial-record {
 .centrado .imgtitlecaption-alt {
   font-size: smaller;
 }
+
+
+
+
+.Servibanca {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/servibanca.png") no-repeat scroll 1px 0 transparent;
+  padding-left: 15px;
+  background-size: 10px;
+}
+.PSE {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/pse.png") no-repeat scroll 1px 0 transparent;
+  padding-left: 20px;
+  background-size: 14px;
+}
+.Citibank {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/citibank.png") no-repeat scroll 1px 0 transparent;
+  padding-left: 60px;
+  background-size: 50px;
+}
+
+.BotonAzul{
+  border-collapse: collapse;
+  margin: 20px 0 !important;
+  height: 25px;
+}
+.BotonAzul td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_izq.jpg") no-repeat scroll 0 0 transparent;
+  width: 8px;
+}
+.BotonAzul td + td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_medio.jpg") repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 400px;
+  min-width: 350px;
+  text-align: center;
+  cursor: pointer;
+}
+.BotonAzul td + td a {
+/* background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_medio.jpg") repeat scroll 0 0 transparent; */
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+.BotonAzul td + td + td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_der.jpg") no-repeat scroll 0 0 transparent;
+}
+
+.BotonAzul2{
+  border-collapse: collapse;
+  margin: 20px 0 !important;
+  height: 25px;
+}
+.BotonAzul2 td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_izq.jpg") no-repeat scroll 0 0 transparent;
+  width: 8px;
+}
+.BotonAzul2 td + td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_medio.jpg") repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  max-width: 400px;
+  min-width: 250px;
+  text-align: center;
+  cursor: pointer;
+}
+.BotonAzul2 td + td a {
+/* background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_medio.jpg") repeat scroll 0 0 transparent; */
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-weight: bold;
+}
+.BotonAzul2 td + td + td {
+  background: url("http://www.cancilleria.gov.co/sites/all/themes/Cancilleria/images/boton_borde_der.jpg") no-repeat scroll 0 0 transparent;
+}
+/* TRAMITES Y SERVICIOS*/
+
+.Apostilla-TengaEnCuenta-OnLine {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/tenga_en_cuenta_en_linea.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+}
+.Apostilla-TengaEnCuenta-Bogota {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/tenga_en_cuenta_en_bogota.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+}
+.TablaAdjuntos {
+  width: 94%;
+}
+.TablaAdjuntos tr {
+  border: 1px solid #CCCCCC;
+}
+.TablaAdjuntos td {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/barra_gris_claro.png");
+  font-weight: 600;
+  height: 35px;
+  padding: 0 10px;
+  color: #777777;
+}
+.TablaAdjuntos td + td{
+  background: none;
+  width:16px;
+}
+.TablaAdjuntos img {
+  display: list-item;
+  height: 16px;
+  width: 16px;
+}
+
+.HagaSuApostilla-ServicioPresencial td {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_servicio_presencial_sedes_bogota.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.HagaSuApostilla-ServicioPresencial td + td {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_servicio_presencial_sedes_fuera.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+.LugaresExpedicion td {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/pasaportes/imagenes/lugares_expedicion_bogota.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
+  width: 50%;
+}
+.LugaresExpedicion td + td {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/pasaportes/imagenes/lugares_expedicion_fuera_bogota.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
+}
+
+
+.TramitesColombia {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_costos_colombia.png");
+  background-repeat: no-repeat;
+  padding-top: 85px;
+  background-position: 0px 20px;
+}
+.TramitesExterior {
+  background-image: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_costos_exterior.png");
+  background-repeat: no-repeat;
+  padding-top: 85px;
+  background-position: 0px 20px;
+}
+.HagaSuApostilla-Costos {
+  background: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_costos_txt.png") no-repeat scroll 0 0 transparent;
+  padding-top: 50px;
+  vertical-align: top;
+  padding-left: 0px;
+  padding-right: 15px;
+  width: 50%;
+}
+.HagaSuApostilla-Medios {
+  background: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/haga_su_apostilla_medios_pago_txt.png") no-repeat scroll 0 0 transparent;
+  padding-top: 50px;
+  vertical-align: top;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.ui-accordion {
+  margin: 30px 25px 20px 30px !important;
+  width: auto !important;
+}
+ui-accordion-header {
+  background-color: #F5F5F5 !important;
+}
+.ui-accordion-content {
+  background-color: #F5F5F5 !important;
+  background-image: none !important;
+}
+.ui-state-active {
+  background-color: #D2D2D2 !important;
+  background-image: none !important;
+}
+.EnLinea tr td {
+  background: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/registro_firma_enlinea.png") no-repeat scroll 0 0 transparent;
+  padding-top: 65px;
+}
+.OnLine tr td {
+  background: url("http://www.cancilleria.gov.co/sites/default/files/tramites_servicios/apostilla_legalizacion/imagenes/registro-firma-enlinea.png") no-repeat scroll 0 0 transparent;
+  padding-top: 65px;
+}
+h3.views-accordion-tramites_servicios-page_128-header {
+  background: url("/sites/default/files/tramites_servicios/fondo_texto_solo.png") no-repeat scroll 0 10px transparent;
+  color: #808080;
+  font-size: 17px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 15px;
+  height: 30px;
+}
+h3.views-accordion-visas_english-page_1-header {
+  background: url("/sites/default/files/tramites_servicios/fondo_texto_solo.png") no-repeat scroll 0 10px transparent;
+  color: #808080;
+  font-size: 17px;
+  font-weight: 600;
+  padding-left: 15px;
+  margin-top: 15px;
+  height: 30px;
+}
+.DebeTenerEnCuenta {
+  background: url("/sites/default/files/tramites_servicios/fondo_texto_solo.png") no-repeat scroll 0 10px transparent;
+}
+.DebeTenerEnCuenta > h2 {
+color: #808080;
+font-size: 18px;
+font-weight: 600;
+padding-left: 15px;
+padding-top: 0;
+}
+.DebeTenerEnCuenta > p {
+  padding-top: 25px;
+}
+.EnBogota td {
+  background-image: url("/sites/default/files/tramites_servicios/en_bogota.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  height: 80px;
+}
+.FueraDeBogota td {
+  background-image: url("/sites/default/files/tramites_servicios/fuera_de_bogota.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  height: 80px;
+}
+.EnElExterior td {
+  background-image: url("/sites/default/files/tramites_servicios/en_el_exterior.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  height: 80px;
+}
+.PasaportesRequisitosMayores td {
+  background-image: url("/sites/default/files/tramites_servicios/pasaportes/imagenes/pasaportes-requisitos-mayor.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  padding-right: 60px;
+  height: 80px;
+}
+.PasaportesRequisitosMenores td {
+  background-image: url("/sites/default/files/tramites_servicios/pasaportes/imagenes/pasaportes-requisitos-menor.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  padding-right: 60px;
+  height: 80px;
+}
+.PasaportesRequisitosExentos td {
+  background-image: url("/sites/default/files/tramites_servicios/pasaportes/imagenes/pasaportes-requisitos-exento.png");
+  background-position: 0px 20px;
+  background-repeat: no-repeat;
+  padding-top: 65px;
+  padding-right: 60px;
+  height: 80px;
+}
+
+.view-header {
+  padding: 20px 20px 0;
+}
+
+/*
+.negocios .views-row-last .ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active {
+  margin-left: 0;
+  padding: 0 !important;
+}
+.negocios .views-row-last .ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active .field-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+*/
+.beautytips.beautytips-module-processed.bt-active.bt-active > strong {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: #2C139A;
+}
+a.beautytips{
+  width: 104px;
+}
+.ui-widget {
+  font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
+}
+.views-field-field-miniatura-activa {
+  opacity: 0.7;
+}
+.views-field-field-miniatura-activa:hover {
+  opacity: 1;
+}
+
+
+
 
 
 /* End Additional CSS Styles */
