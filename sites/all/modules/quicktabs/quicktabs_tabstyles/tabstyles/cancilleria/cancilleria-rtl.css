@@ -1,0 +1,8 @@
+ul.quicktabs-tabs.quicktabs-style-cancilleria li {
+  float: right;
+}
+
+ul.quicktabs-tabs.quicktabs-style-cancilleria li a,
+ul.quicktabs-tabs.quicktabs-style-cancilleria li a:visited {
+  float: right;
+}
