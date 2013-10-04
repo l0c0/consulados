@@ -86,6 +86,11 @@ ul.Cancilleria_vmenu a
    text-align: left;
 }
 
+.Cancilleria_postcontent .view-colombianos-noticias- p
+{
+   margin: 10px 0 10px;
+}
+
 .Cancilleria_postcontent h1, .Cancilleria_postcontent h1 a, .Cancilleria_postcontent h1 a:link, .Cancilleria_postcontent h1 a:visited, .Cancilleria_postcontent h1 a:hover,
 .Cancilleria_postcontent h2, .Cancilleria_postcontent h2 a, .Cancilleria_postcontent h2 a:link, .Cancilleria_postcontent h2 a:visited, .Cancilleria_postcontent h2 a:hover,
 .Cancilleria_postcontent h3, .Cancilleria_postcontent h3 a, .Cancilleria_postcontent h3 a:link, .Cancilleria_postcontent h3 a:visited, .Cancilleria_postcontent h3 a:hover,
@@ -149,6 +154,15 @@ ul.Cancilleria_vmenu a
    text-transform: none;
    font-variant: normal;
    color: #2C139A;
+}
+
+.Cancilleria_postcontent a, .Cancilleria_postcontent a:link {
+    color: #2C139A;
+    font-family: Arial,'Arial Unicode MS',Helvetica,Sans-Serif;
+    font-variant: normal;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .Cancilleria_postcontent h1
@@ -3272,6 +3286,12 @@ padding:2px!important;
   position: relative;
   width: 260px;
 }
+#Pagina_Inicial .panels-flexible-column-42-3 {
+  float: left;
+  margin-top: 5px;
+  width: 24.8261%;
+}
+
 
 .panel-2col .panel-col-first,.panel-2col .panel-col-last {
 width:auto!important;
@@ -3946,7 +3966,7 @@ h3.views-accordion-tramites_servicios-page_128-header {
   margin-top: 15px;
   height: 30px;
 }
-h3.views-accordion-visas_english-page_1-header {
+h3.views-accordion-procedures_and_services-page_1-header {
   background: url("/sites/default/files/tramites_servicios/fondo_texto_solo.png") no-repeat scroll 0 10px transparent;
   color: #808080;
   font-size: 17px;
@@ -4018,6 +4038,10 @@ padding-top: 0;
   padding: 20px 20px 0;
 }
 
+.view-colombianos-noticias- .view-header {
+  padding: 1px 10px 0;
+}
+
 /*
 .negocios .views-row-last .ui-accordion-content.ui-helper-reset.ui-widget-content.ui-corner-bottom.ui-accordion-content-active {
   margin-left: 0;
@@ -4046,10 +4070,62 @@ a.beautytips{
   opacity: 1;
 }
 
+.jcarousel-skin-tramites_servicios .jcarousel-container-horizontal {
+  margin-left: 25px !important;
+  padding: 0;
+  width: 705px;
+}
 
+#cancille-apostilla-legalizacion-form {
+  display: none;
+}
 
+/* Atenci¨®n al Ciudadano */
+.panels-flexible-region-clone_of_dos_columnas_30_70_apiladas-izquierda .pane-title {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #7D7D7D !important;
+  font-size: 36px !important;
+  margin-left: 20px;
+  padding: 2px !important;    
+}
 
+.panels-flexible-region-clone_of_dos_columnas_30_70_apiladas-derecha .panel-pane.pane-menu-tree.pane-active {
+  background: none repeat scroll 0 0 white;
+  margin-right: 20px;
+}
 
+.panels-flexible-region-clone_of_dos_columnas_30_70_apiladas-center .pane-title {
+  background: none repeat scroll 0 0 transparent;
+  border: 0 none;
+  color: #000000 !important;
+  float: left;
+  font-size: 36px !important;
+  height: 80px;
+  line-height: 30px;
+  margin-left: 20px;
+  vertical-align: middle;
+  width: 25%;
+}
+
+.panels-flexible-region-clone_of_dos_columnas_30_70_apiladas-center .pane-content {
+  margin-right: 20px;
+}
+
+.node.colombianos_para_colombianos.promote {
+  margin-left: 20px;
+}
+
+.view-colombianos-noticias- .views-row {
+  margin-top: 10px;
+}
+
+.ui-accordion h3.ui-accordion-header {
+  padding-left: 2.2em;
+}
+.Block-Left-15px {
+  margin-left: 15px;
+}
 /* End Additional CSS Styles */
 
 /* BEGIN FCKEditor, CKEditor, TinyMCE modules support*/
