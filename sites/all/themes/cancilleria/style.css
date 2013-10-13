@@ -4126,6 +4126,10 @@ a.beautytips{
 .Block-Left-15px {
   margin-left: 15px;
 }
+.views-field.views-field-field-domain-telephone-support .field-content {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* End Additional CSS Styles */
 
 /* BEGIN FCKEditor, CKEditor, TinyMCE modules support*/
