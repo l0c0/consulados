@@ -4130,6 +4130,20 @@ a.beautytips{
   padding-left: 0;
   padding-right: 0;
 }
+.pane-node .contextual-links-wrapper
+{
+  right: 35px;
+  z-index: 998;
+}
+.popup-message-title {
+  display: none;
+}
+#popup-message-close {
+  font-family: sans-serif;
+}
+#popup-message-background {
+  z-index: 101;
+}
 /* End Additional CSS Styles */
 
 /* BEGIN FCKEditor, CKEditor, TinyMCE modules support*/
