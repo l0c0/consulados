@@ -64,6 +64,12 @@ function popup_message_settings() {
       0 => t('Disabled'),
     ),
   );
+  $form['popup_message_fieldset']['popup_message_delay'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Delay'),
+    '#description' => t('Message will show after this number of seconds. Set to 0 to show instantly.'),
+    '#default_value' => variable_get('popup_message_delay', 0),
+  );
 
   // Styles.
   // Find styles in module directory.
@@ -94,10 +100,62 @@ function popup_message_settings() {
   $form['popup_message_fieldset']['popup_message_style'] = array(
     '#type' => 'select',
     '#title' => t('Popup style'),
-    '#default_value' => variable_get('popup_message_style', drupal_get_path('module', 'popup_message') . '/styles/'. POPUP_MESSAGE_CSS_NAME ),
+    '#default_value' => variable_get('popup_message_style', drupal_get_path('module', 'popup_message') . '/styles/' . POPUP_MESSAGE_CSS_NAME ),
     '#options' => $styles,
     '#description' => t('To add custom styles create directory and file "[my_default_theme]/popup_message_styles/mystyle/popup.css" and set in this file custom CSS code.'),
   );
+  
+  $form['popup_message_fieldset']['visibility']['path'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Pages'),
+    '#collapsible' => TRUE,
+    '#collapsed' => FALSE,
+    '#group' => 'visibility',
+    '#weight' => 0,
+  );
+  
+  $options = array(
+    POPUP_MESSAGE_VISIBILITY_NOTLISTED => t('All pages except those listed'),
+    POPUP_MESSAGE_VISIBILITY_LISTED => t('Only the listed pages'),
+  );
+  
+  $description = t("Specify pages by using their paths. Enter one path per line. The '*' character is a wildcard. Example paths are %blog for the blog page and %blog-wildcard for every personal blog. %front is the front page.", array('%blog' => 'blog', '%blog-wildcard' => 'blog/*', '%front' => '<front>'));
 
+  $access = user_access('use PHP for settings');
+  $visibility = variable_get('popup_message_visibility', POPUP_MESSAGE_VISIBILITY_NOTLISTED);  
+  if (isset($visibility ) && $visibility  == POPUP_MESSAGE_VISIBILITY_PHP && !$access) {
+    $form['popup_message_fieldset']['visibility']['path']['popup_message_visibility'] = array(
+      '#type' => 'value',
+      '#value' => POPUP_MESSAGE_VISIBILITY_PHP,
+    );
+    $form['popup_message_fieldset']['visibility']['path']['popup_message_visibility_pages'] = array(
+      '#type' => 'value',
+      '#value' => variable_get('popup_message_visibility_pages', ''),
+    );
+  }
+  else {  
+    if (module_exists('php') && $access) {
+      $options += array(POPUP_MESSAGE_VISIBILITY_PHP => t('Pages on which this PHP code returns <code>TRUE</code> (experts only)'));
+      $title = t('Pages or PHP code');
+      $description .= ' ' . t('If the PHP option is chosen, enter PHP code between %php. Note that executing incorrect PHP code can break your Drupal site.', array('%php' => '<?php ?>'));
+    }
+    else {
+      $title = t('Pages');
+    }
+    
+    $form['popup_message_fieldset']['visibility']['path']['popup_message_visibility'] = array(
+      '#type' => 'radios',
+      '#title' => t('Show block on specific pages'),
+      '#options' => $options,
+      '#default_value' => $visibility,
+    );
+    
+    $form['popup_message_fieldset']['visibility']['path']['popup_message_visibility_pages'] = array(
+      '#type' => 'textarea',
+      '#default_value' => variable_get('popup_message_visibility_pages', ''),
+      '#description' => $description,
+      '#title' => '<span class="element-invisible">' . $title . '</span>',
+    );
+  }
   return system_settings_form($form);
 }

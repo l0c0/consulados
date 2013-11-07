@@ -33,6 +33,7 @@ function popup_message_disable_popup() {
   if (popupStatus == 1) {
     jQuery("#popup-message-background").fadeOut("slow");
     jQuery("#popup-message-window").fadeOut("slow");
+    jQuery('#popup-message-content').empty().remove();
     popupStatus = 0;
   }
 }
@@ -117,27 +118,44 @@ function popup_message_get_last_object_item(variable_data) {
 
 Drupal.behaviors.popup_message = {
   attach: function(context) {
+    var timestamp = (+new Date());
     var check_cookie = Drupal.settings.popup_message.check_cookie;
     check_cookie = popup_message_get_last_object_item(check_cookie);
-    var popup_message_cookie = jQuery.cookie("popup_message_displayed");
-    if (popup_message_cookie != 1 || check_cookie == false) {
+    var popup_message_cookie = jQuery.cookie("popup_message_displayed"),
+    delay = Drupal.settings.popup_message.delay * 1000,
+    show_popup = false;
+    if (!popup_message_cookie || check_cookie == 0) {
       // Set cookie.
-      jQuery.cookie("popup_message_displayed", 1, {
-        path: '/'
-      });
-
-      // Get variables.
-      var popup_message_title = Drupal.settings.popup_message.title;
-      var popup_message_body = Drupal.settings.popup_message.body;
-      var popup_message_width = Drupal.settings.popup_message.width;
-      var popup_message_height = Drupal.settings.popup_message.height;
-      popup_message_title = popup_message_get_last_object_item(popup_message_title);
-      popup_message_body = popup_message_get_last_object_item(popup_message_body);
-      popup_message_width = popup_message_get_last_object_item(popup_message_width);
-      popup_message_height = popup_message_get_last_object_item(popup_message_height);
+      jQuery.cookie("popup_message_displayed", timestamp, {path: '/'});
       // Display message.
-      popup_message_display_popup(popup_message_title, popup_message_body,
-        popup_message_width, popup_message_height)
+      show_popup = true;
+    }
+    else {
+      popup_message_cookie = parseInt(popup_message_cookie, 10);
+      show_popup = timestamp < popup_message_cookie + delay;
+    }
+ 
+    if (show_popup) {
+      var run_popup = function () {
+        // Get variables.
+        var popup_message_title = Drupal.settings.popup_message.title,
+        popup_message_body = Drupal.settings.popup_message.body,
+        popup_message_width = Drupal.settings.popup_message.width,
+        popup_message_height = Drupal.settings.popup_message.height;
+       
+        popup_message_title = popup_message_get_last_object_item(popup_message_title);
+        popup_message_body = popup_message_get_last_object_item(popup_message_body);
+        popup_message_width = popup_message_get_last_object_item(popup_message_width);
+        popup_message_height = popup_message_get_last_object_item(popup_message_height);
+        popup_message_display_popup(
+          popup_message_title,
+          popup_message_body,
+          popup_message_width,
+          popup_message_height);
+      };
+   
+      var trigger_time = (!popup_message_cookie) ? (popup_message_cookie + delay - timestamp) : delay;   
+      setTimeout(run_popup, trigger_time);      
     }
   }
 };
