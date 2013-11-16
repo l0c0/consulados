@@ -19,8 +19,5 @@ function popup_message_uninstall() {
   variable_del('popup_message_title');
   variable_del('popup_message_body');
   variable_del('popup_message_enable');
-  variable_del('popup_message_delay');
   variable_del('popup_message_check_cookie');
-  variable_del('popup_message_visibility');
-  variable_del('popup_message_visibility_pages');
 }
