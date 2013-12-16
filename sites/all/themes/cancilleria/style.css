@@ -541,11 +541,11 @@ li p, .Cancilleria_postcontent li p, .Cancilleria_blockcontent li p
     z-index: auto !important;
 }
 
-.responsive .Cancilleria_header
+/*.responsive .Cancilleria_header
 {
    background-image: url('images/header.jpg');
    background-position: center center;
-}
+}*/
 
 .Cancilleria_header > .region, .Cancilleria_header > .block
 {
@@ -3220,7 +3220,9 @@ width:960px;
 .Cancilleria_postcontent a:hover {
 color:#2B1399;
 }
-
+.Cancilleria_postcontent a:visited {
+color:#2B1399;
+}
 .Cancilleria_postcontent ul > li {
 content:no-close-quote!important;
 }
@@ -3450,7 +3452,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
   font-size: 11px;
   font-style: italic;
   font-variant: normal;
-  margin-left: 180px;
+  margin-left: 5px;
   margin-top: -8px;
   overflow: hidden;
   padding: 0 10px;
@@ -3675,57 +3677,57 @@ width: 105px;
 ul.menu li a.ministerio_relaciones_exteriores {
    background:url("images/iconos/cancilleria-logo1.png") no-repeat;
    background-size: contain;
-   padding-left: 20px;
+   padding-left: 27px;
 }
 ul.menu li a.presidencia_consulado {
    background:url("images/iconos/presidencia-logo1.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.proexport {
    background:url("images/iconos/proexport-logo1.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.redes_colombia {
    background:url("images/iconos/redescolombia1.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.urna_cristal {
    background:url("images/iconos/logo_urna1.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.registraduria_estado_civil {
    background:url("images/iconos/registraduria-logo1.jpg") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.documentos_estrategicos {
    background:url("images/iconos/docs-estrategicos.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.temas_especificos {
    background:url("images/iconos/temas-espec.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.other-consulates {
    background:url("images/iconos/otros-consulados.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.cancilleria_ninos {
    background:url("images/iconos/cancilleria_ninos.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 ul.menu li a.certification-of-judicial-record {
    background:url("images/iconos/certificado.png") no-repeat;
    background-size: contain;
-      padding-left: 20px;
+      padding-left: 27px;
 }
 
 .Cancilleria_shapes {
@@ -3761,7 +3763,7 @@ ul.menu li a.certification-of-judicial-record {
 }
 
 .field.field-name-field-main-image.field-type-image.field-label-hidden {
-  text-align: center;
+  text-align: left;
 }
 .field-content.centrado {
   text-align: center;
@@ -4174,7 +4176,7 @@ li.expanded, li.leaf, li.collapsed
 ul li
 {
 	list-style-type: disc;
-	list-style: inside;
+	list-style: outside;
 }
 ul.arttabs_primary, ul.arttabs_secondary, .links, img.service-links
 {
